@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="./Friends.css"/>
+<title>Greeting</title>
+</head>
+<body onload="greetFriends()"><div id="container" onload="greetFriends()"><h1 id="hello">Hello <span id="changecolor">World</span></h1>
+<div id="Ray"></div>
+ <div id="Oscar"></div>
+ <div id="Gwen"></div>
+ <div id="Bob"></div>
+ <div id="Marie"></div>
+ </div> 
+</body>
+<script>
+
+function greetFriends () {
+	var name;
+	var randnum;
+	
+	document.body.style.backgroundColor = "#92a8d1";
+	document.getElementById('Ray').textContent = "Hi Ray!";
+	document.getElementById('Oscar').textContent = "Hello Oscar!";
+	document.getElementById('Gwen').textContent = "Howdy Gwen!";
+	document.getElementById('Bob').textContent = "What's up Bob!";
+	document.getElementById('Marie').textContent ="Greetings Marie!";
+	randnum = Math.floor((Math.random() * 5) + 1);	
+	alert(randnum)
+	
+	switch(randnum) {
+    case 1:
+		 document.getElementById("Ray").style.color="red";
+	 	 document.getElementById("Ray").style.backgroundColor="#1E90FF";
+		 document.getElementById("Ray").style.fontSize="20pt";
+		 document.getElementById("Ray").style.border = "thick solid grey";
+         break;
+    case 2:
+    	document.getElementById("Oscar").style.color="orange";
+	 	document.getElementById("Oscar").style.backgroundColor="blue";
+	 	document.getElementById("Oscar").style.fontSize="20pt";
+	 	document.getElementById("Oscar").style.border = "thick solid grey";
+	 	break;
+    case 3:
+    	document.getElementById("Gwen").style.color="green";
+	 	document.getElementById("Gwen").style.backgroundColor="#00008B";
+	 	document.getElementById("Gwen").style.fontSize="20pt";  
+	 	document.getElementById("Gwen").style.border = "thick solid grey";
+
+	 	break;
+    case 4:
+    	document.getElementById("Bob").style.color="blue";
+	 	document.getElementById("Bob").style.backgroundColor="teal";
+	 	document.getElementById("Bob").style.fontSize="20pt"; 
+	 	document.getElementById("Bob").style.border = "thick solid grey";
+
+	 	break;
+    case 5:
+    	document.getElementById("Marie").style.color="magenta";
+	 	document.getElementById("Marie").style.backgroundColor="orange";
+	 	document.getElementById("Marie").style.fontSize="20pt"; 
+	 	document.getElementById("Marie").style.border = "thick solid grey";
+
+	 	break;
+    default:
+    	alert("Error")
+	}
+}
+
+
+</script>
+</html>

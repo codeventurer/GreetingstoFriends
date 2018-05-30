@@ -1,0 +1,98 @@
+@charset "ISO-8859-1";
+
+* {	
+margin:0;
+padding:0;		
+}
+
+html body {
+	
+margin:0;
+padding:0;
+width:100%;
+height:100%;
+background-color:light:blue;
+
+}
+
+#container {
+	position:relative;
+	width:100%;
+    height:50%;   
+}
+
+#Ray {
+	position:relative;
+	height:5px;	
+	text-align:center;
+	width:100%;
+	top:150px;
+	padding-top:3%;
+	padding-bottom:3%;
+	border:0;
+	}
+
+#Oscar {
+	
+	position:relative;
+	height:5px;
+	text-align:center;
+	width:100%;
+	top:155px;	
+	padding-top:3%;
+	padding-bottom:3%;
+	border:0;
+}
+
+#Gwen {
+	position:relative;
+	text-align:center;
+	height:5px;	
+	width:100%;
+	padding-top:3%;
+	padding-bottom:3%;
+	top:160px;
+	border:0;
+}
+
+#Bob {
+	position:relative;
+	text-align:center;
+	padding-top:3%;
+	padding-bottom:3%;
+	height:5px;	
+	width:100%;
+	top:165px;
+	border:0;
+}
+
+
+#Marie {
+	position:relative;
+	text-align:center;
+	height:5px;
+	padding-top:3%;
+	padding-bottom:3%;
+	width:100%;
+	top:170px;
+	border:0;
+}
+
+#hello {
+	position:fixed;
+	top:15%;
+	left:40%;
+	margin:auto;
+	text-align:center;
+	font-size:25pt;	
+	width:20%;
+	border-size 3px, solid, black;	
+}
+
+#changecolor {
+	
+	background-color:black;
+	color:white;
+	font-size:25pt;
+}
+
